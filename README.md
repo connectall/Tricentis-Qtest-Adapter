@@ -4,6 +4,7 @@ This repository contains the source and binaries for a basic adapter that allows
 To get started, download this repository into a local folder on your linux system. Then follow the following steps:
 * Request a license from sales@connectall.com
 * Set the qtest_setup.sh file setting the url's, etc. for your integration
+* Create a login.json file that has your login to the qtest server, eg, username=[username&password=[password]&grant_type=password
 * Edit the qTestCustomAdapterDescriptor.json, setting the fields:
   * type, ie, the name of the application you provided to sales above, eg, "ABC Company".
   * project name and id. This will be displayed in the ConnectALL entity mapping screen.
