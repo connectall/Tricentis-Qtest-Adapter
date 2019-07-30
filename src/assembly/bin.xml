@@ -1,0 +1,21 @@
+<assembly>
+<formats>
+  <format>zip</format>
+</formats>
+<fileSets>
+  <fileSet>
+    <directory>target</directory>
+    <outputDirectory></outputDirectory>
+    <includes>
+      <include>connectall-*-adapter*.jar</include>
+    </includes>
+  </fileSet>
+  <fileSet>
+    <directory>src/images</directory>
+    <outputDirectory></outputDirectory>
+    <includes>
+      <include>*.png</include>
+    </includes>
+  </fileSet>
+</fileSets>
+</assembly>

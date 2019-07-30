@@ -1,0 +1,57 @@
+{
+  "displayName": "Tricentis Tosca",
+  "type": "${adapter.type}",
+  "version":"${adapter.version}",
+  "logo": "${adapter.type}.png",
+  "logoSmall": "${adapter.type}_small.png",
+  "metadata": [
+    {
+      "displayName": "Workspace",
+      "name": "workspace",
+      "dependent": false,
+      "isProject":true
+    },{
+      "displayName": "Issue Type",
+      "name": "issueType",
+      "dependentMetadata":"workspace",
+      "dependent": true
+    }
+  ],
+  "loginOptions": [
+	{
+		"displayName":"Password",
+		"name":"password",
+		"required":false
+	}
+  ],
+  "supportedDatatypes":[
+  	"String",
+  	"Int32",
+  	"Boolean",
+  	"datetime"
+  ],
+  "defaultFields":[
+  	{"referenceField":"NAME","fieldId":"Name"},
+  	{"referenceField":"DESCRIPTION","fieldId":"Description"},
+    {"referenceField":"STATE","fieldId":"State"}
+  ],
+  "idFieldName": "UniqueId",
+  "titleFieldName": "Name",
+  "artifactFieldName": "issueType",
+  "testStepsFieldName": "",
+  "changedDateFieldName": "LastModifiedDateTime",
+  "dateFormat": "dd-MM-yyyy",
+  "dateTimeFormat": "yyyy-MM-dd'T'HH:mm:ss",
+  "isISO8601DateFormat": "false",
+  "commentFieldName": "",
+  "commentFieldIds": [],
+  "attachmentFieldName": "",
+  "attachmentFieldId": "",
+  "defaultFetchSize":50,
+  "maxFetchSize":50,
+  "connectionTimeout":60000,
+  "readTimeout":120000,
+  "additionalIdFieldNames":[],
+  "projectLoginRequired": false,
+  "parentFieldIds" : []
+}

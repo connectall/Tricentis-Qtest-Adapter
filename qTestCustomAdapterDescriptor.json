@@ -1,0 +1,1383 @@
+{
+	"displayName": "qTest Adapter",
+	"type": "qtest",
+	"logo": "qtest.png",
+	"logoSmall": "qtest_small.png",
+	"metadata": [{
+			"name": "project",
+			"values":[
+				{"id":"86769", "name": "qConnect - Sample Project"}],
+			"dependent": false,
+			"dependentMetadata": ""
+		}, {
+			"name": "Type",
+			"values":[
+				{"id":"defects", "name": "defects"}],
+			"dependent": true,
+			"dependentMetadata": ""
+		}
+
+	],
+	"fields": [
+  {
+    "links": [
+      {
+        "rel": "self",
+        "href": "https://connectall.qtestnet.com/api/v3/projects/86769/6413603"
+      }
+    ],
+    "id": "id",
+    "datatype": "String",
+    "name": "id",
+    "required": true,
+    "constrained": false,
+    "order": 0,
+    "multiple": false,
+    "data_type": 1,
+    "searchable": false,
+    "free_text_search": false,
+    "search_key": "sum",
+    "system_field": true,
+    "original_name": "Summary",
+    "is_active": true
+  },
+  {
+    "links": [
+      {
+        "rel": "self",
+        "href": "https://connectall.qtestnet.com/api/v3/projects/86769/6413603"
+      }
+    ],
+    "id": 6413603,
+    "datatype": "String",
+    "name": "Summary",
+    "required": true,
+    "constrained": false,
+    "order": 0,
+    "multiple": false,
+    "data_type": 1,
+    "searchable": false,
+    "free_text_search": false,
+    "search_key": "sum",
+    "system_field": true,
+    "original_name": "Summary",
+    "is_active": true
+  },
+  {
+    "links": [
+      {
+        "rel": "self",
+        "href": "https://connectall.qtestnet.com/api/v3/projects/86769/6413606"
+      }
+    ],
+    "id": 6413606,
+    "datatype": "LongText",
+    "name": "Description",
+    "required": true,
+    "constrained": false,
+    "order": 1,
+    "multiple": false,
+    "data_type": 2,
+    "searchable": true,
+    "free_text_search": false,
+    "search_key": "des",
+    "system_field": true,
+    "original_name": "Description",
+    "is_active": true
+  },
+  {
+    "links": [
+      {
+        "rel": "self",
+        "href": "https://connectall.qtestnet.com/api/v3/projects/86769/6413604"
+      }
+    ],
+    "id": 6413604,
+    "datatype": "String",
+    "name": "Submitter",
+    "required": false,
+    "constrained": true,
+    "order": 2,
+    "allowed_values": [
+      {
+        "links": [],
+        "value": 111107,
+        "name": "Alex Weiss",
+        "order": 1,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 105875,
+        "name": "David Rumley",
+        "order": 2,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 109125,
+        "name": "Doug Bass",
+        "order": 3,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 107084,
+        "name": "Muralidharan Natarajan",
+        "order": 4,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 107087,
+        "name": "Sharath Bhaskara",
+        "order": 5,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 111097,
+        "name": "Timothy Leach",
+        "order": 6,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 107085,
+        "name": "Uma Rajaram",
+        "order": 7,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 107086,
+        "name": "Vijayakumar Selvaraju",
+        "order": 8,
+        "is_default": false,
+        "is_active": true
+      }
+    ],
+    "multiple": false,
+    "data_type": 5,
+    "searchable": false,
+    "free_text_search": false,
+    "system_field": true,
+    "original_name": "SubmitterDefect",
+    "is_active": true
+  },
+  {
+    "links": [
+      {
+        "rel": "self",
+        "href": "https://connectall.qtestnet.com/api/v3/projects/86769/6413613"
+      }
+    ],
+    "id": 6413613,
+    "datatype": "Number",
+    "name": "Affected Release/Build",
+    "required": false,
+    "constrained": true,
+    "order": 3,
+    "allowed_values": [
+      {
+        "links": [],
+        "value": -351251,
+        "name": "Release 1",
+        "order": 1,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": -351252,
+        "name": "Release 2",
+        "order": 2,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": -351253,
+        "name": "Release 3",
+        "order": 3,
+        "is_default": false,
+        "is_active": true
+      }
+    ],
+    "multiple": false,
+    "data_type": 3,
+    "searchable": false,
+    "free_text_search": false,
+    "system_field": true,
+    "original_name": "Affected Release/Build",
+    "is_active": true
+  },
+  {
+    "links": [
+      {
+        "rel": "self",
+        "href": "https://connectall.qtestnet.com/api/v3/projects/86769/6413608"
+      }
+    ],
+    "id": 6413608,
+    "datatype": "Number",
+    "name": "Severity",
+    "required": true,
+    "constrained": true,
+    "order": 4,
+    "allowed_values": [
+      {
+        "links": [],
+        "value": 10301,
+        "name": "Cosmetic",
+        "order": 1,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 10302,
+        "name": "Minor",
+        "order": 2,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 10303,
+        "name": "Average",
+        "order": 3,
+        "is_default": true,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 10304,
+        "name": "Major",
+        "order": 4,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 10305,
+        "name": "Fatal",
+        "order": 5,
+        "is_default": false,
+        "is_active": true
+      }
+    ],
+    "multiple": false,
+    "data_type": 3,
+    "searchable": true,
+    "free_text_search": false,
+    "search_key": "svt",
+    "system_field": true,
+    "original_name": "Severity",
+    "is_active": true
+  },
+  {
+    "links": [
+      {
+        "rel": "self",
+        "href": "https://connectall.qtestnet.com/api/v3/projects/86769/6413614"
+      }
+    ],
+    "id": 6413614,
+    "datatype": "Number",
+    "name": "Fixed Release/Build",
+    "required": false,
+    "constrained": true,
+    "order": 5,
+    "allowed_values": [
+      {
+        "links": [],
+        "value": -351251,
+        "name": "Release 1",
+        "order": 1,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": -351252,
+        "name": "Release 2",
+        "order": 2,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": -351253,
+        "name": "Release 3",
+        "order": 3,
+        "is_default": false,
+        "is_active": true
+      }
+    ],
+    "multiple": false,
+    "data_type": 3,
+    "searchable": false,
+    "free_text_search": false,
+    "system_field": true,
+    "original_name": "Fixed Release/Build",
+    "is_active": true
+  },
+  {
+    "links": [
+      {
+        "rel": "self",
+        "href": "https://connectall.qtestnet.com/api/v3/projects/86769/6413607"
+      }
+    ],
+    "id": 6413607,
+    "datatype": "DateTime",
+    "name": "Submitted Date",
+    "required": false,
+    "constrained": false,
+    "order": 6,
+    "multiple": false,
+    "data_type": 9,
+    "searchable": false,
+    "free_text_search": false,
+    "system_field": true,
+    "original_name": "SubmittedDateDefect",
+    "is_active": true
+  },
+  {
+    "links": [
+      {
+        "rel": "self",
+        "href": "https://connectall.qtestnet.com/api/v3/projects/86769/6413610"
+      }
+    ],
+    "id": 6413610,
+    "datatype": "Number",
+    "name": "Priority",
+    "required": true,
+    "constrained": true,
+    "order": 8,
+    "allowed_values": [
+      {
+        "links": [],
+        "value": 10201,
+        "name": "Undecided",
+        "order": 1,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 10202,
+        "name": "Low",
+        "order": 2,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 10203,
+        "name": "Medium",
+        "order": 3,
+        "is_default": true,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 10204,
+        "name": "High",
+        "order": 4,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 10205,
+        "name": "Urgent",
+        "order": 5,
+        "is_default": false,
+        "is_active": true
+      }
+    ],
+    "multiple": false,
+    "data_type": 3,
+    "searchable": true,
+    "free_text_search": false,
+    "search_key": "prt",
+    "system_field": true,
+    "original_name": "Priority",
+    "is_active": true
+  },
+  {
+    "links": [
+      {
+        "rel": "self",
+        "href": "https://connectall.qtestnet.com/api/v3/projects/86769/6413615"
+      }
+    ],
+    "id": 6413615,
+    "datatype": "Number",
+    "name": "Root Cause",
+    "required": false,
+    "constrained": true,
+    "order": 9,
+    "allowed_values": [
+      {
+        "links": [],
+        "value": 10601,
+        "name": "Document Unclear/Ambiguous/ Inconsistent",
+        "order": 1,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 10602,
+        "name": "Lack of Training",
+        "order": 2,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 10603,
+        "name": "Human Error",
+        "order": 3,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 10604,
+        "name": "Failure to Follow Procedure or Process",
+        "order": 4,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 10605,
+        "name": "Management Issue",
+        "order": 5,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 10606,
+        "name": "Poor Procedure or Process",
+        "order": 6,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 10607,
+        "name": "Unrealistic Deadlines Imposed",
+        "order": 7,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 10608,
+        "name": "Lack of Appropriate Tool",
+        "order": 8,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 10609,
+        "name": "Inappropriate Environment",
+        "order": 9,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 10610,
+        "name": "Poor Communication",
+        "order": 10,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 10611,
+        "name": "Caused by 3rd Party supplied product",
+        "order": 11,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 10612,
+        "name": "Inadequate/ Improper input from Client",
+        "order": 12,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 10613,
+        "name": "Other",
+        "order": 13,
+        "is_default": true,
+        "is_active": true
+      }
+    ],
+    "multiple": false,
+    "data_type": 3,
+    "searchable": true,
+    "free_text_search": false,
+    "search_key": "rtc",
+    "system_field": true,
+    "original_name": "Root Cause",
+    "is_active": true
+  },
+  {
+    "links": [
+      {
+        "rel": "self",
+        "href": "https://connectall.qtestnet.com/api/v3/projects/86769/6413609"
+      }
+    ],
+    "id": 6413609,
+    "datatype": "Number",
+    "name": "Module",
+    "required": false,
+    "constrained": true,
+    "order": 10,
+    "allowed_values": [
+      {
+        "links": [],
+        "value": 5545345,
+        "name": "MD-9 MD-6 Company page",
+        "order": -9,
+        "is_default": false,
+        "is_active": false
+      },
+      {
+        "links": [],
+        "value": 5545346,
+        "name": "MD-10 MD-5 Blog",
+        "order": -8,
+        "is_default": false,
+        "is_active": false
+      },
+      {
+        "links": [],
+        "value": 5545347,
+        "name": "MD-11 MD-11 Partners",
+        "order": -7,
+        "is_default": false,
+        "is_active": false
+      },
+      {
+        "links": [],
+        "value": 5545348,
+        "name": "MD-12 MD-4 Resources page",
+        "order": -6,
+        "is_default": false,
+        "is_active": false
+      },
+      {
+        "links": [],
+        "value": 5545349,
+        "name": "MD-13 MD-3 Solutions page",
+        "order": -5,
+        "is_default": false,
+        "is_active": false
+      },
+      {
+        "links": [],
+        "value": 5545350,
+        "name": "MD-14 MD-10 Free Trial",
+        "order": -4,
+        "is_default": false,
+        "is_active": false
+      },
+      {
+        "links": [],
+        "value": 5545351,
+        "name": "MD-15 MD-7 Common",
+        "order": -3,
+        "is_default": false,
+        "is_active": false
+      },
+      {
+        "links": [],
+        "value": 5545352,
+        "name": "MD-16 MD-2 Homepage",
+        "order": -2,
+        "is_default": false,
+        "is_active": false
+      },
+      {
+        "links": [],
+        "value": 5909911,
+        "name": "MD-18 Untitled",
+        "order": 1,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 5545344,
+        "name": "MD-8 MD-2 Homepage",
+        "order": 10,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 5545343,
+        "name": "MD-7 MD-7 Common",
+        "order": 11,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 5545342,
+        "name": "MD-6 MD-10 Free Trial",
+        "order": 12,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 5545341,
+        "name": "MD-5 MD-3 Solutions pages",
+        "order": 13,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 5545340,
+        "name": "MD-4 MD-4 Resources pages",
+        "order": 14,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 5545339,
+        "name": "MD-3 MD-11 Partners pages",
+        "order": 15,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 5545338,
+        "name": "MD-2 MD-5 Blog",
+        "order": 16,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 5545337,
+        "name": "MD-1 MD-6 Company page",
+        "order": 17,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 5545353,
+        "name": "MD-17 qConnect - Sample Project",
+        "order": 18,
+        "is_default": false,
+        "is_active": true
+      }
+    ],
+    "multiple": false,
+    "data_type": 3,
+    "searchable": false,
+    "free_text_search": false,
+    "system_field": true,
+    "original_name": "Module",
+    "is_active": true
+  },
+  {
+    "links": [
+      {
+        "rel": "self",
+        "href": "https://connectall.qtestnet.com/api/v3/projects/86769/6413605"
+      }
+    ],
+    "id": 6413605,
+    "datatype": "Number",
+    "name": "Assigned To",
+    "required": false,
+    "constrained": true,
+    "order": 12,
+    "allowed_values": [
+      {
+        "links": [],
+        "value": 111107,
+        "name": "Alex Weiss",
+        "order": 1,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 105875,
+        "name": "David Rumley",
+        "order": 2,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 109125,
+        "name": "Doug Bass",
+        "order": 3,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 107084,
+        "name": "Muralidharan Natarajan",
+        "order": 4,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 107087,
+        "name": "Sharath Bhaskara",
+        "order": 5,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 111097,
+        "name": "Timothy Leach",
+        "order": 6,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 107085,
+        "name": "Uma Rajaram",
+        "order": 7,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 107086,
+        "name": "Vijayakumar Selvaraju",
+        "order": 8,
+        "is_default": false,
+        "is_active": true
+      }
+    ],
+    "multiple": false,
+    "data_type": 5,
+    "searchable": false,
+    "free_text_search": false,
+    "system_field": true,
+    "original_name": "Assigned To",
+    "is_active": true
+  },
+  {
+    "links": [
+      {
+        "rel": "self",
+        "href": "https://connectall.qtestnet.com/api/v3/projects/86769/6413616"
+      }
+    ],
+    "id": 6413616,
+    "datatype": "Number",
+    "name": "Status",
+    "required": true,
+    "constrained": true,
+    "order": 13,
+    "allowed_values": [
+      {
+        "links": [],
+        "value": 10001,
+        "name": "New",
+        "order": 1,
+        "is_default": true,
+        "is_active": true,
+        "color": "#90ee90"
+      },
+      {
+        "links": [],
+        "value": 10002,
+        "name": "Assigned",
+        "order": 2,
+        "is_default": false,
+        "is_active": true,
+        "color": "#f4a460"
+      },
+      {
+        "links": [],
+        "value": 10003,
+        "name": "Resolved",
+        "order": 3,
+        "is_default": false,
+        "is_active": true,
+        "color": "#87cefa"
+      },
+      {
+        "links": [],
+        "value": 10004,
+        "name": "Reopened",
+        "order": 4,
+        "is_default": false,
+        "is_active": true,
+        "color": "#f08080"
+      },
+      {
+        "links": [],
+        "value": 10005,
+        "name": "Closed",
+        "order": 5,
+        "is_default": false,
+        "is_active": true,
+        "color": "#d3d3d3"
+      },
+      {
+        "links": [],
+        "value": 10006,
+        "name": "Deferred",
+        "order": 6,
+        "is_default": false,
+        "is_active": true,
+        "color": "#ffe4b5"
+      }
+    ],
+    "multiple": false,
+    "data_type": 15,
+    "searchable": true,
+    "free_text_search": false,
+    "search_key": "stat",
+    "system_field": true,
+    "original_name": "Status",
+    "is_active": true
+  },
+  {
+    "links": [
+      {
+        "rel": "self",
+        "href": "https://connectall.qtestnet.com/api/v3/projects/86769/6413617"
+      }
+    ],
+    "id": 6413617,
+    "datatype": "Number",
+    "name": "Type",
+    "required": true,
+    "constrained": true,
+    "order": 14,
+    "allowed_values": [
+      {
+        "links": [],
+        "value": 10401,
+        "name": "Bug",
+        "order": 1,
+        "is_default": true,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 10402,
+        "name": "Enhancement",
+        "order": 2,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 10403,
+        "name": "Change Request",
+        "order": 3,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 10404,
+        "name": "Other",
+        "order": 4,
+        "is_default": false,
+        "is_active": true
+      }
+    ],
+    "multiple": false,
+    "data_type": 3,
+    "searchable": true,
+    "free_text_search": false,
+    "search_key": "type",
+    "system_field": true,
+    "original_name": "Type",
+    "is_active": true
+  },
+  {
+    "links": [
+      {
+        "rel": "self",
+        "href": "https://connectall.qtestnet.com/api/v3/projects/86769/6413618"
+      }
+    ],
+    "id": 6413618,
+    "datatype": "Number",
+    "name": "Target Release/Build",
+    "required": false,
+    "constrained": true,
+    "order": 16,
+    "allowed_values": [
+      {
+        "links": [],
+        "value": -351251,
+        "name": "Release 1",
+        "order": 1,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": -351252,
+        "name": "Release 2",
+        "order": 2,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": -351253,
+        "name": "Release 3",
+        "order": 3,
+        "is_default": false,
+        "is_active": true
+      }
+    ],
+    "multiple": false,
+    "data_type": 3,
+    "searchable": false,
+    "free_text_search": false,
+    "system_field": true,
+    "original_name": "Target Release/Build",
+    "is_active": true
+  },
+  {
+    "links": [
+      {
+        "rel": "self",
+        "href": "https://connectall.qtestnet.com/api/v3/projects/86769/6413619"
+      }
+    ],
+    "id": 6413619,
+    "datatype": "Number",
+    "name": "Reason",
+    "required": false,
+    "constrained": true,
+    "order": 17,
+    "allowed_values": [
+      {
+        "links": [],
+        "value": 10101,
+        "name": "Additional Info Needed",
+        "order": 1,
+        "is_default": true,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 10102,
+        "name": "Business Review Needed",
+        "order": 2,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 10103,
+        "name": "Cannot Fix",
+        "order": 3,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 10104,
+        "name": "Duplicate",
+        "order": 4,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 10105,
+        "name": "Info Required To Retest",
+        "order": 5,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 10106,
+        "name": "Invalid",
+        "order": 6,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 10107,
+        "name": "Irreproducible",
+        "order": 7,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 10108,
+        "name": "Out Of Scope",
+        "order": 8,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 10109,
+        "name": "Requirement Incomplete",
+        "order": 9,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 10110,
+        "name": "Requirement Incorrect",
+        "order": 10,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 10111,
+        "name": "Retested Not Fixed",
+        "order": 11,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 10112,
+        "name": "Review Bypassed",
+        "order": 12,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 10113,
+        "name": "Submitted By Mistake",
+        "order": 13,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 10114,
+        "name": "Test Case Incorrect",
+        "order": 14,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 10115,
+        "name": "Validated Closed",
+        "order": 15,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 10116,
+        "name": "Work Completed",
+        "order": 16,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 10117,
+        "name": "Works As Designed",
+        "order": 17,
+        "is_default": false,
+        "is_active": true
+      }
+    ],
+    "multiple": false,
+    "data_type": 3,
+    "searchable": true,
+    "free_text_search": false,
+    "search_key": "rea",
+    "system_field": true,
+    "original_name": "Reason",
+    "is_active": true
+  },
+  {
+    "links": [
+      {
+        "rel": "self",
+        "href": "https://connectall.qtestnet.com/api/v3/projects/86769/6413620"
+      }
+    ],
+    "id": 6413620,
+    "datatype": "Number",
+    "name": "Category",
+    "required": false,
+    "constrained": true,
+    "order": 18,
+    "allowed_values": [
+      {
+        "links": [],
+        "value": 10501,
+        "name": "Requirement - Wrong",
+        "order": 1,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 10502,
+        "name": "Requirement - Missing",
+        "order": 2,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 10503,
+        "name": "Requirement - Ambiguous",
+        "order": 3,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 10504,
+        "name": "Design - UI",
+        "order": 4,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 10505,
+        "name": "Design - Database",
+        "order": 5,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 10506,
+        "name": "Design - Component",
+        "order": 6,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 10507,
+        "name": "Design - Architecture",
+        "order": 7,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 10508,
+        "name": "Implementation - Error Handling",
+        "order": 8,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 10509,
+        "name": "Implementation - UI",
+        "order": 9,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 10510,
+        "name": "Implementation - Logical Defect",
+        "order": 10,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 10511,
+        "name": "Implementation - Standard",
+        "order": 11,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 10512,
+        "name": "Implementation - Third Party Defect",
+        "order": 12,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 10513,
+        "name": "Implementation - Setup Script",
+        "order": 13,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 10514,
+        "name": "Test - Documents",
+        "order": 14,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 10515,
+        "name": "Test - Scripts",
+        "order": 15,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 10516,
+        "name": "Performance",
+        "order": 16,
+        "is_default": false,
+        "is_active": true
+      },
+      {
+        "links": [],
+        "value": 10517,
+        "name": "Other ",
+        "order": 17,
+        "is_default": true,
+        "is_active": true
+      }
+    ],
+    "multiple": false,
+    "data_type": 3,
+    "searchable": true,
+    "free_text_search": false,
+    "search_key": "cat",
+    "system_field": true,
+    "original_name": "Category",
+    "is_active": true
+  },
+  {
+    "links": [
+      {
+        "rel": "self",
+        "href": "https://connectall.qtestnet.com/api/v3/projects/86769/6413621"
+      }
+    ],
+    "id": 6413621,
+    "datatype": "Date",
+    "name": "Target Date",
+    "required": false,
+    "constrained": false,
+    "order": 20,
+    "multiple": false,
+    "data_type": 4,
+    "searchable": false,
+    "free_text_search": false,
+    "system_field": true,
+    "original_name": "Target Date",
+    "is_active": true
+  },
+  {
+    "links": [
+      {
+        "rel": "self",
+        "href": "https://connectall.qtestnet.com/api/v3/projects/86769/6413622"
+      }
+    ],
+    "id": 6413622,
+    "datatype": "DateTime",
+    "name": "Closed Date",
+    "required": false,
+    "constrained": false,
+    "order": 21,
+    "multiple": false,
+    "data_type": 9,
+    "searchable": false,
+    "free_text_search": false,
+    "system_field": true,
+    "original_name": "Closed Date",
+    "is_active": true
+  },
+  {
+    "links": [
+      {
+        "rel": "self",
+        "href": "https://connectall.qtestnet.com/api/v3/projects/86769/6413623"
+      }
+    ],
+    "id": 6413623,
+    "datatype": "Number",
+    "name": "Environment",
+    "required": false,
+    "constrained": true,
+    "order": 22,
+    "allowed_values": [],
+    "multiple": false,
+    "data_type": 13,
+    "searchable": false,
+    "free_text_search": false,
+    "system_field": true,
+    "original_name": "Environment",
+    "is_active": true
+  }
+]
+,
+	"loginOptions": [""],
+	"idFieldName": "id",
+	"titleFieldName": "Summary",
+	"projectFieldName": "",
+	"artifactFieldName": "Type",
+	"testStepsFieldName": "",
+	"changedDateFieldName": "modifiedOn",
+	"dateFormat": "yyyy-MM-dd",
+	"dateTimeFormat": "yyyy-MM-dd'T'HH:mm:ssZ",
+	"isISO8601DateFormat": "false",
+	"commentFieldName": "",
+	"commentFieldId": "",
+	"attachmentFieldName": "",
+	"attachmentFieldId": "",
+	"apiVersion": "1",
+	"applicationType": "remote"
+}

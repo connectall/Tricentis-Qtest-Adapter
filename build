@@ -1,0 +1,1 @@
+~/bin/build && cp target/tosca-0.0.1.jar /Users/doug/Documents/workspace/Docker/data/1-node-2.9.1/CATomcat/webapps/ConnectAll/WEB-INF/lib && cp target/tosca-0.0.1.jar /Users/doug/Documents/workspace/Docker/data/1-node-2.9.1/mule/mule-standalone-3.9.0/apps/ConnectAll-2.9.1-SNAPSHOT/lib

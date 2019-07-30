@@ -1,0 +1,60 @@
+{"fields":{
+
+"id":"DF-10","reporter":"105875","createdOn":"2019-04-07T08:09:34-04:00","modifiedBy":"105875","modifiedOn":"2019-04-09T14:26:22-04:00","_URL":"https://connectall.qtestnet.com/p/86769/portal/project#tab=defects&object=17&id=2181392"
+,"Summary":"The content of Our innovation shows wrong "
+,"Description":"URL: http://www.qasymphony.com/
+  
+  
+  Step:
+  
+  1) Launch the Company page
+  
+  2) The Our innovation section of About page
+  
+  
+  
+  Screen 1: QASymphony | Complete Test Case Management Platform
+   + Step 1: Click here
+     Bug: Displaying Play button in wrong position
+  Screen 2: About Us | Our Philosophy and Our Innovation | QASymphony
+   + Step 2: Click 'Customers' link
+  * System Information:
+    Operating System: Microsoft Windows 8.1 Enterprise 64-bit, Version 6.3.9600
+    Resolutions: 1366x768, 1920x1080
+    qTest eXplorer Version: 5.0.2.1
+    IE version: 11.0.9600.17031
+    ADO version: 6.3.9600.16384
+    CPU: Intel(R) Core(TM) i7-5500U CPU @ 2.40GHz
+    RAM: 8103.88 MB
+    Available RAM: 4503.97 MB
+    User: KMS\nhuqnguyen
+  * Recorded Application 1: chrome.exe
+    Application version: 46.0
+    File path: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+    File version: 46.0.2490.71
+    File size: 0.77MB (811848 Bytes)
+    File modified date: 2015-10-08T17:53:06+00:00
+  * Additional Info:
+    Record Time: 10/20/2015 09:58:50 AM - 10/20/2015 10:05:54 AM
+  Session URL: https://kmstechnology07.qtestnet.com/p/18655/portal/session/4722517876878/review#"
+,"Submitter":"David Rumley"
+,"Affected Release/Build":"Release 3"
+,"Severity":"Major"
+,"Fixed Release/Build":"Release 3"
+,"Submitted Date":"2019-04-07T12:09:34+00:00"
+,"Priority":"Low"
+,"Root Cause":"Other"
+,"Module":"MD-1 MD-6 Company page"
+,"Assigned To":"David Rumley"
+,"Status":"Resolved"
+,"Type":"Bug"
+,"Target Release/Build":""
+,"Reason":""
+,"Category":"Other "
+,"Target Date":""
+,"Closed Date":""
+,"Environment":""
+},
+"appLinkName":"qtest2Jira","origin":"destination"
+
+}
