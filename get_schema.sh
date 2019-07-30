@@ -1,4 +1,4 @@
-. setup.sh
+. qtest_setup.sh
 
 # Login
 curl --header "Content-Type: application/x-www-form-urlencoded" -u "${qTestUserid}:" -X POST -d @login.json -c qtest.cookies $qTestUrl/oauth/token >token.json
