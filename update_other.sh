@@ -27,7 +27,7 @@ rm data.json
 fi
 
 #curl -v -o data.json --header "Authorization: Bearer $TOKEN" "$qTestUrl/api/v3/projects/$PROJECT/defects/last-change?startTime=$dte&start=1&pageSize=200"
-curl -v --header "Authorization: Bearer $TOKEN" "$qTestUrl/api/v3/projects/$PROJECT/defects/last-change?startTime=$dte&start=1&pageSize=200" >data.json 
+curl --header "Authorization: Bearer $TOKEN" "$qTestUrl/api/v3/projects/$PROJECT/defects/last-change?startTime=$dte&start=1&pageSize=200" >data.json 
 
 if [ -e data.json ]
 then

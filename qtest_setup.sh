@@ -9,5 +9,6 @@ QTEST_ORIGIN=destination
 OTHER_ORIGIN=source
 
 # The time zone of the ConnectALL server
-CA_timezone="%%2B04"
+CA_timezone="-07"
+
 
