@@ -12,56 +12,27 @@
 		}, {
 			"name": "Type",
 			"values":[
-				{"id":"defects", "name": "defects"}],
+				{"id":"10401", "name": "defects"}],
 			"dependent": true,
 			"dependentMetadata": ""
 		}
 
 	],
 	"fields": [
-  {
-    "links": [
-      {
-        "rel": "self",
-        "href": "https://connectall.qtestnet.com/api/v3/projects/86769/6413603"
-      }
-    ],
+{
+    "id": 6413617,
+    "datatype": "Number",
+    "name": "Type"
+},
+{    
     "id": "id",
-    "datatype": "String",
-    "name": "id",
-    "required": true,
-    "constrained": false,
-    "order": 0,
-    "multiple": false,
-    "data_type": 1,
-    "searchable": false,
-    "free_text_search": false,
-    "search_key": "sum",
-    "system_field": true,
-    "original_name": "Summary",
-    "is_active": true
+    "datatype": "string",
+    "name": "id"
   },
   {
-    "links": [
-      {
-        "rel": "self",
-        "href": "https://connectall.qtestnet.com/api/v3/projects/86769/6413603"
-      }
-    ],
     "id": 6413603,
-    "datatype": "String",
-    "name": "Summary",
-    "required": true,
-    "constrained": false,
-    "order": 0,
-    "multiple": false,
-    "data_type": 1,
-    "searchable": false,
-    "free_text_search": false,
-    "search_key": "sum",
-    "system_field": true,
-    "original_name": "Summary",
-    "is_active": true
+    "datatype": "string",
+    "name": "Summary"
   },
   {
     "links": [
@@ -93,7 +64,7 @@
       }
     ],
     "id": 6413604,
-    "datatype": "String",
+    "datatype": "string",
     "name": "Submitter",
     "required": false,
     "constrained": true,
@@ -875,62 +846,7 @@
     "original_name": "Status",
     "is_active": true
   },
-  {
-    "links": [
-      {
-        "rel": "self",
-        "href": "https://connectall.qtestnet.com/api/v3/projects/86769/6413617"
-      }
-    ],
-    "id": 6413617,
-    "datatype": "Number",
-    "name": "Type",
-    "required": true,
-    "constrained": true,
-    "order": 14,
-    "allowed_values": [
-      {
-        "links": [],
-        "value": 10401,
-        "name": "Bug",
-        "order": 1,
-        "is_default": true,
-        "is_active": true
-      },
-      {
-        "links": [],
-        "value": 10402,
-        "name": "Enhancement",
-        "order": 2,
-        "is_default": false,
-        "is_active": true
-      },
-      {
-        "links": [],
-        "value": 10403,
-        "name": "Change Request",
-        "order": 3,
-        "is_default": false,
-        "is_active": true
-      },
-      {
-        "links": [],
-        "value": 10404,
-        "name": "Other",
-        "order": 4,
-        "is_default": false,
-        "is_active": true
-      }
-    ],
-    "multiple": false,
-    "data_type": 3,
-    "searchable": true,
-    "free_text_search": false,
-    "search_key": "type",
-    "system_field": true,
-    "original_name": "Type",
-    "is_active": true
-  },
+  
   {
     "links": [
       {
@@ -1364,7 +1280,7 @@
   }
 ]
 ,
-	"loginOptions": [""],
+	"loginOptions": [],
 	"idFieldName": "id",
 	"titleFieldName": "Summary",
 	"projectFieldName": "",
