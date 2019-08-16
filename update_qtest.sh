@@ -25,7 +25,7 @@ EOF
 #	"lastModifiedTime":"2019-07-01 16:53:15.000"
 
 echo "$json" | curl -o data.json --header "Content-Type: application/json;charset=UTF-8" -X POST -T - ${ConnectAllUrl}/connectall/api/2/search?apikey=$ConnectAllApiKey
-echo the records from jira are: `cat data.json`
+echo the records to send to qTest are: `cat data.json`
 
 # Convert the next read record and send it to qtest
 i=0
@@ -50,15 +50,15 @@ do
 	echo the id lookup resulty is: `cat qtest_id.json`
 	QTEST_ID=`java -cp target/qtest-0.0.1.jar:bin/json-20090211.jar com.connectall.adapter.qtest.GetQtestLoginToken id <qtest_id.json`
 
-	if [ "$ID" = "" ]
+	if [ "$QTEST_ID" = "" ]
 	then
 		defect=""
 		echo create a new qtest defect using the data: `cat qtest.json`
 	else
-		defect="/$ID"
+		defect="/$QTEST_ID"
 		echo update an existing qtest defect $defect using the data: `cat qtest.json`
 	fi
-	cat qtest.json | curl --header "Authorization: Bearer $TOKEN" --header "Content-Type: application/json;charset=UTF-8" -X PUT -T - ${qTestUrl}/api/v3/projects/$PROJECT/defects$defect
+	cat qtest.json | curl --header "Authorization: Bearer $TOKEN" --header "Content-Type: application/json;charset=UTF-8" -X POST -T - ${qTestUrl}/api/v3/projects/$PROJECT/defects$defect
 	ID=`java -cp target/qtest-0.0.1.jar:bin/json-20090211.jar com.connectall.adapter.qtest.JsontoQTest $i qTestCustomAdapterDescriptor.json qTest.json <data.json`
 done
 

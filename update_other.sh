@@ -26,14 +26,14 @@ then
 rm data.json
 fi
 
-#curl -v -o data.json --header "Authorization: Bearer $TOKEN" "$qTestUrl/api/v3/projects/$PROJECT/defects/last-change?startTime=$dte&start=1&pageSize=200"
-curl --header "Authorization: Bearer $TOKEN" "$qTestUrl/api/v3/projects/$PROJECT/defects/last-change?startTime=$dte&start=1&pageSize=200" >data.json 
+curl -v -o data.json --header "Authorization: Bearer $TOKEN" "$qTestUrl/api/v3/projects/$PROJECT/defects/last-change?startTime=$dte&start=1&pageSize=200"
+#curl --header "Authorization: Bearer $TOKEN" "$qTestUrl/api/v3/projects/$PROJECT/defects/last-change?startTime=$dte&start=1&pageSize=200" >data.json 
 
 if [ -e data.json ]
 then
 
 	i=0  
-	json=`java -cp /Users/doug/git/qtest/target/qtest-0.0.1.jar:bin/json-20090211.jar com/connectall/adapter/qtest/QtestToConnectAllJson $APPLINK $QTEST_ORIGIN $i <data.json`
+	json=`java -cp /Users/doug/git/qtest/target/qtest-0.0.1.jar:bin/json-20090211.jar com/connectall/adapter/qtest/QtestToConnectAllJson $APPLINK $OTHER_ORIGIN $i <data.json`
 	while [ $? -eq 0 ]
 	do
 		((i++))
