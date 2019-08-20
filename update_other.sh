@@ -1,5 +1,10 @@
 #!/bin/bash
 
+if [ $# != 2 ]
+then
+    echo "Usage: ./update_other.sh AppLinkName QtestProjectId"
+else
+
 . qtest_setup.sh $1 $2
 
 # brew install jq
@@ -26,14 +31,14 @@ then
 rm data.json
 fi
 
-curl -v -o data.json --header "Authorization: Bearer $TOKEN" "$qTestUrl/api/v3/projects/$PROJECT/defects/last-change?startTime=$dte&start=1&pageSize=200"
+curl -o data.json --header "Authorization: Bearer $TOKEN" "$qTestUrl/api/v3/projects/$PROJECT/defects/last-change?startTime=$dte&start=1&pageSize=200"
 #curl --header "Authorization: Bearer $TOKEN" "$qTestUrl/api/v3/projects/$PROJECT/defects/last-change?startTime=$dte&start=1&pageSize=200" >data.json 
 
 if [ -e data.json ]
 then
 
 	i=0  
-	json=`java -cp /Users/doug/git/qtest/target/qtest-0.0.1.jar:bin/json-20090211.jar com/connectall/adapter/qtest/QtestToConnectAllJson $APPLINK $OTHER_ORIGIN $i <data.json`
+	json=`java -cp /Users/doug/git/qtest/target/qtest-0.0.1.jar:bin/json-20090211.jar com/connectall/adapter/qtest/QtestToConnectAllJson $APPLINK $QTEST_ORIGIN $i <data.json`
 	while [ $? -eq 0 ]
 	do
 		((i++))
@@ -49,3 +54,4 @@ fi
 
 echo Log out
 curl --header "Authorization: Bearer $TOKEN"  -X POST -c qtest.cookies $qTestUrl/oauth/revoke
+fi
